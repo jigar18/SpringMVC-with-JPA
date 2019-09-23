@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <title>Add User</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div align="center">
+            <h1>Add New User</h1>
+            <br />
+            <form action="#" th:action="@{/save}" th:object="${student}" method="post">
+                <table class="table padding">
+                    <tr>
+                        <td>ID:</td>
+                        <td><input required type = "number" th:field = "*{id}"></td>
+                    </tr><br />
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input required type="text" th:field="*{firstName}"></td>
+                    </tr><br />
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input required type="text" th:field="*{lastName}"></td>
+                    </tr><br />
+                    <tr>
+                        <td>Age:</td>
+                        <td><input required type="number" th:field="*{age}"></td>
+                    </tr><br />
+                    <tr>
+                        <td colspan="2">
+                            <button class="btn btn-primary" type="submit">Save</button>
+                            <button class="btn btn-secondary" type="button" onclick="location.href='http://localhost:8080'">Back</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

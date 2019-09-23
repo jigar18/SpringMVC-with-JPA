@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="uts-8" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+        <title>Edit Page</title>
+    </head>
+    <body>
+        <div align="center">
+            <h1>Edit City</h1>
+            <br />
+            <form action="#" th:action="@{/edit}" th:object="${student}" method="post">
+                <table class="table table-striped padding">
+                    <tr>
+                        <td>ID:</td>
+                        <td>
+                            <input type="number" th:field="*{id}" readonly="readonly" style="background: lightgray;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>First Name:</td>
+                        <td>
+                            <input required type="text" th:field="*{firstName}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td>
+                            <input required type="text" th:field="*{lastName}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td><input required type="text" th:field="*{age}"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="btn btn-primary" type="submit">Save</button>
+                            <button class="btn btn-secondary" type="button" onclick="location.href = 'http://localhost:8080'">Back</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
