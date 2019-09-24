@@ -40,14 +40,20 @@ public class StudentController {
         return modelAndView;
     }
 
-//    @RequestMapping(value = "/save", method = RequestMethod.POST)
-//    public String save(@ModelAttribute("student")Student student) {
-//        studentService.saveStudent(student);
-//        return "redirect:/";
-//    }
-//
-//    @RequestMapping(value = "/cancel", method = RequestMethod.POST)
-//    public String cancel() {
-//        return "redirect:/";
-//    }
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    public String save(@ModelAttribute("student")Student student) {
+        studentService.saveStudent(student);
+        return "redirect:/";
+    }
+
+    @RequestMapping(value = "/cancel", method = RequestMethod.POST)
+    public String cancel() {
+        return "redirect:/";
+    }
+
+    @RequestMapping(value = "/delete", method = RequestMethod.POST)
+    public String delete(@PathVariable(name = "id") int id) {
+        studentService.deleteStudent(id);
+        return "redirect:/";
+    }
 }
