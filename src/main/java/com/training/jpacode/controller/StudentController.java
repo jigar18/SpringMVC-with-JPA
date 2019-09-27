@@ -1,6 +1,6 @@
 package com.training.jpacode.controller;
 
-import com.training.jpacode.model.Student;
+import com.training.jpacode.domain.Student;
 import com.training.jpacode.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

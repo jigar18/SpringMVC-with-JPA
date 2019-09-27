@@ -1,6 +1,6 @@
 package com.training.jpacode.repository;
 
-import com.training.jpacode.model.Student;
+import com.training.jpacode.domain.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

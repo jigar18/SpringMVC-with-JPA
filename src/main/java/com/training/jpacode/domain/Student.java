@@ -1,4 +1,4 @@
-package com.training.jpacode.model;
+package com.training.jpacode.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,6 +1,6 @@
 package com.training.jpacode.service;
 
-import com.training.jpacode.model.Student;
+import com.training.jpacode.domain.Student;
 import com.training.jpacode.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
